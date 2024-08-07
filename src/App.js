@@ -12,7 +12,7 @@ import ProductDetail from './components/Products/ProductDetail';
 import Cart from './components/Cart/Cart';
 import OrderHistory from './components/Orders/OrderHistory';
 import OrderDetail from './components/Orders/OrderDetail';
-import Profile from './components/Auth/Profile'; 
+import Profile from './components/Auth/Profile';
 
 function App() {
   return (
@@ -28,12 +28,11 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/orders" element={<OrderHistory />} />
             <Route path="/orders/:id" element={<OrderDetail />} />
-            <Route path="/profile" element={<Profile />} /> {/* Add profile route */}
+            <Route path="/profile" element={<Profile />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsOfService />} />
-            
           </Routes>
         </main>
         <Footer />
@@ -43,3 +42,4 @@ function App() {
 }
 
 export default App;
+
